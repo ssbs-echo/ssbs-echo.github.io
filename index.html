@@ -4,6 +4,7 @@
   <link rel="icon" href="logo.jpg">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" as="image" href="header-image.jpg">
   <title>Home | Echo LitMag</title>
   <style>
     .vertically-center{
@@ -191,15 +192,15 @@
       background-color:white;
       transition:background-color 0.2s, color 0.2s;
     }
-    .block-number:hover{
+    .block-number-active:hover{
       background-color: #2244dd;
       color:white;
     }
     #issue1{
-      background-image:url('pic1.jpg');
+      background-image:url('issue1.jpg');
     }
     #issue2{
-      background-image:url('pic2.png');
+      background-image:url('issue2.jpg');
     }
     #issue3{
       background-image:url('issue3.jpg');
@@ -308,7 +309,7 @@
 </header>
 <main id="main">
   <section id="issue6" class="clear-fix">
-    <img class="float-right" src="pic1.jpg">
+    <img class="float-right" src="pic1.png">
     <h2>ECHO VI: COLLAGE</h2>
     <p>Our writing is a collage of our beliefs, observations, dreams, and imagination. We weave these fragments of ourselves into even the most formulaic lines or brushstrokes, and that makes our works uniquely “us”. Our magazine, then, is a collage of voices – quiet or loud, brisk or flamboyant, serious or humorous – under each of which hides a unique personality. It is a cacophony. But in a good way.</p>
     <p>And we want your *voice* in our noisy collage. It can be anything – short stories, poems, essays, op-eds, artworks, photographs, hermit crabs, word-salads. There are no restrictions, no required topics, no “other *matters*.” Please send us anything that is authentically you.</p>
@@ -316,21 +317,21 @@
   <section id="about-us" class="clear-fix">
     <img class="float-left" src="pic2.png">
     <h2>ABOUT US</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos distinctio minus cupiditate iure, provident odit recusandae! Assumenda saepe, dolorem, asperiores fugit eos eligendi vitae reiciendis hic rem id, esse molestiae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sapiente reprehenderit hic repellendus recusandae porro a, ipsam amet inventore voluptate nemo! Natus in odit voluptas esse modi quo ratione aspernatur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae nemo, voluptates velit deserunt accusamus error aliquid modi dolorum dignissimos quasi iure possimus voluptate porro at ea voluptatibus veniam molestiae soluta?</p>
+    <p><em>Echo</em> emerged in 2019 from SSBS students passionate about providing a platform where ideas may collide. Now, it has evolved beyond a collection of articles and artwork—it's a reflection of the passion, talent, and spirit that make our school so special. With each piece submitted, we receive not just words or images, but a glimpse into the heart and soul of our community. The hard work of every contributor, from writers and artists to photographers and editors, is what gives life to these pages. We take <em>Echo</em> as an opportunity to celebrate the diversity and creativity that surround us every day.</p>
   </section>
   <!-- Blocks Section -->
   <section id="past-issues">
     <h2>PAST ISSUES</h2>
   <div class="blocks-container">
-    <a href="issue1.html"><div class="block block-number"><p>I</p></div></a>
+    <a href="#"><div class="block block-number"><p>I</p></div></a>
     <a href="#"><div class="block" id="issue1"><p></p></div></a>
     <a href="#"><div class="block" id="issue2"><p></p></div></a>
-    <a href="issue2.html"><div class="block block-number"><p>II</p></div></a>
-    <a href="issue3.html"><div class="block block-number"><p>III</p></div></a>
+    <a href="#"><div class="block block-number"><p>II</p></div></a>
+    <a href="issue3.html"><div class="block block-number block-number-active"><p>III</p></div></a>
     <a href="#"><div class="block" id="issue3"><p></p></div></a>
     <a href="#"><div class="block" id="issue4"><p></p></div></a>
-    <a href="issue4.html"><div class="block block-number"><p>IV</p></div></a>
-    <a href="issue5.html"><div class="block block-number"><p>V</p></div></a>
+    <a href="issue4.html"><div class="block block-number block-number-active"><p>IV</p></div></a>
+    <a href="issue5.html"><div class="block block-number block-number-active"><p>V</p></div></a>
     <a href="#"><div class="block" id="issue5"><p></p></div></a>
   </div>
 </section>
@@ -347,7 +348,7 @@
   <h2>Contacts</h2>
   <div>
     <p>WeChat Subscription Account: Echo LitMag</p>
-    <p>Email: xxx</p>
+    <p>Email: ssbsecho@163.com</p>
     <br>
     <p>Website Maintenance: Iris Chen (Wechat: irisnviolets)</p>
   </div>
