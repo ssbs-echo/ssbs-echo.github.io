@@ -40,6 +40,10 @@
     a{
       text-decoration:none;
       color:#2244dd;
+      transition:color 0.2s;
+    }
+    a:hover{
+      color:#32569d;
     }
     body, html {
       
@@ -62,6 +66,7 @@
     nav a{
       font-size:1.2em;
     }
+    
     nav div{
       display:flex;
       align-items:end;
@@ -75,6 +80,9 @@
         line-height:1.2em;
         margin-bottom:10px;
 
+    }
+    nav a:hover div p{
+      color:#32569d;
     }
     nav img{
         width:50px;
@@ -113,10 +121,12 @@
 <body>
   <nav>
     <div class="placeholder"></div>
-    <div>
-        <img src="logo.jpg" alt="Logo" width="50">
-        <p>Echo LitMag</p>
-    </div>
+    <a href="index.html">
+      <div>
+          <img src="logo.jpg" alt="Logo" width="50">
+          <p>Echo LitMag</p>
+      </div>
+    </a>
     <p><a href="issue3.pdf" target="_blank">Download</a></p>
 </nav>
 <h2>ISSUE 3: 2021</h2>
