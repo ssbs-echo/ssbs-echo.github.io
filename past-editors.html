@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="logo.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Include PDF.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+  <!-- Include Turn.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4/turn.min.js"></script>
+  <title>Past Editors | Echo LitMag</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .vertically-center{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+    .horizontally-center{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .float-left,.float-right{
+        width:80vw;
+    }
+    .large-only{
+        display:none;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    a{
+      text-decoration:none;
+      color:#2244dd;
+      transition:color 0.2s;
+    }
+    a:hover{
+      color:#32569d;
+    }
+    body, html {
+      
+      font-family:'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    nav{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        position:fixed;
+        top:0;
+        z-index:99;
+        width:100vw;
+        background-color:white;
+        padding:10px 30px;
+        box-shadow:0 3px 10px black;
+        text-align:center;
+    }
+    nav a{
+      font-size:1.2em;
+    }
+    
+    nav div{
+      display:flex;
+      align-items:end;
+    }
+    nav div p{
+        color:#2244dd;
+        font-size:24px;
+        font-family: Georgia, serif;
+        text-transform: uppercase;
+        letter-spacing:0.1em;
+        line-height:1.2em;
+        margin-bottom:10px;
+
+    }
+    nav a:hover div p{
+      color:#32569d;
+    }
+    nav img{
+        width:50px;
+        height:50px;
+        margin-right:10px;
+    }
+
+    .end{
+      margin-top:1px;
+          width:100%;
+          padding:5px 0;
+          background-color:#2244dd;
+          color:white;
+          text-align:center;
+      }
+
+    
+     h1{
+      margin-top:100px;
+      font-weight:normal;
+      font-family:Georgia, serif;
+      font-size:36px;
+      text-align:center;
+      letter-spacing: 0.05em;;
+      text-transform:uppercase;
+    }
+    h2{
+      font-weight:normal;
+      font-family:Georgia, serif;
+      font-size:32px;
+      margin-bottom:10px;
+    }
+    h3{
+        font-weight:normal;
+        font-family:"Times New Roman", serif;
+        font-style:italic;
+        color:#666;
+        margin-bottom:10px;
+    }
+    .editor{
+        margin:30px 5vw;
+        width:90vw;
+        display:flex;
+    }
+    .editor img{
+        margin:0 20px 0 0;
+        width:200px;
+        height:200px;
+    }
+    
+    @media (min-width: 768px){
+        h1{
+            margin:150px 0 10px;
+            font-size:48px;
+        }
+        #editors{
+            display:flex;
+            flex-wrap:wrap;
+            width:90vw;
+            margin:20px 3vw 20px 7vw;
+        }
+        .editor{
+            margin:30px 2.5vw;
+            width:calc(37.5vw - 20px);
+        }
+        
+
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="placeholder"></div>
+    <a href="index.html">
+      <div>
+          <img src="logo.jpg" alt="Logo" width="50">
+          <p>Echo LitMag</p>
+      </div>
+    </a>
+    <p><a href="index.html">Home</a></p>
+</nav>
+<main>
+    <h1>Past Editors</h1>
+    <p style="font-style:italic;text-align:center;color:#666;">*Arranged in alphabetical order</p>
+    <div id="editors">
+        <div class="editor">
+            <img src="Editors/Dorothy_Huang.jpg">
+            <div>
+                <h2>Dorothy Huang</h2>
+                <h3>Issue 5</h3>
+                <p>How vain it is to sit down to write when you have not stood up to live</p>
+            </div>
+        </div>
+        <div class="editor">
+            <img src="Editors/Star_Huang.jpg">
+            <div>
+                <h2>Star Huang</h2>
+                <h3>Issue 3</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="editor">
+            <img src="Editors/Annabel_Li.jpg">
+            <div>
+                <h2>Annabel Li</h2>
+                <h3>Issue 1</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="editor">
+            <img src="Editors/Harry_Li.jpg">
+            <div>
+                <h2>Harry Li</h2>
+                <h3>Issue 4</h3>
+                <p>Tell me not, in mournful numbers, life is but an empty dream</p>
+            </div>
+        </div>
+        <div class="editor">
+            <img src="Editors/Sammi_Liao.jpg">
+            <div>
+                <h2>Sammi Liao</h2>
+                <h3>Issue 3</h3>
+                <p>“If there’s a book that you want to read, but it hasn’t been written yet, then you must write it.” —— Toni Morrison</p>
+            </div>
+        </div>
+        <div class="editor">
+            <img src="Editors/Rosalie_Liu.jpg">
+            <div>
+                <h2>Rosalie Liu</h2>
+                <h3>Issue 1</h3>
+                <p>Perhaps every artwork echoes not its authors' humble past but a little bit about its own processes of creation.</p>
+            </div>
+        </div>
+        <div class="editor">
+            <img src="Editors/Nicole_Tan.jpg">
+            <div>
+                <h2>Nicole Tan</h2>
+                <h3>Issue 1</h3>
+                <p>Perhaps every artwork echoes not its authors' humble past but a little bit about its own processes of creation.</p>
+            </div>
+        </div>
+        <div class="editor">
+            <img src="Editors/Jerry_Wang.jpg">
+            <div>
+                <h2>Jerry Wang</h2>
+                <h3>Issue 5</h3>
+                <p>Colorless green ideas sleep furiously.</p>
+            </div>
+        </div>
+        <div class="editor">
+            <img src="Editors/Ruby_Wang.jpg">
+            <div>
+                <h2>Ruby Wang</h2>
+                <h3>Issue 3-4</h3>
+                <p>文学的意义生长于那些被我们定义的无用性中，所以祝你永远都能畅意地读与写，捕捉到生活里的每一处隐喻和修辞</p>
+            </div>
+        </div>
+        <div class="editor">
+            <img src="Editors/Wendy_Wang.jpg">
+            <div>
+                <h2>Wendy Wang</h2>
+                <h3>Issue 5</h3>
+                <p>Der schwer gefasste Entschluss: Muss es sein? Es muss sein! Es muss sein!</p>
+            </div>
+        </div>
+        <div class="editor">
+            <img src="Editors/Elena_Xiang.jpg">
+            <div>
+                <h2>Elena Xiang</h2>
+                <h3>Issue 3</h3>
+                <p>More important to me than writing is the pleasure of reading, of seeing the smallest courses of life through others’ lenses. Echo provides this platform, and I’m glad to be part of its legacy.</p>
+            </div>
+        </div>
+        <div class="editor">
+            <img src="Editors/Joyce_Yang.jpg">
+            <div>
+                <h2>Joyce Yang</h2>
+                <h3>Issue 4</h3>
+                <p>Writing is the most powerful means to connect.</p>
+            </div>
+        </div>
+        <div class="editor">
+            <img src="Editors/Maxwell_Zhou.jpg">
+            <div>
+                <h2>Maxwell Zhou</h2>
+                <h3>Issue 1</h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="end">Copyright 2024 SSBS Echo LitMag.</div>
+</body>
+</html>

@@ -149,8 +149,21 @@
       text-decoration:none;
       transition:background-color 0.2s;
     }
+    .ctn-btn{
+      margin-top:20px;
+      display:inline-block;
+      border:2px solid #2244dd;
+      background-color: white;
+      padding:15px;
+      font-size:1.5em;
+      font-family:Georgia, serif;
+      color:#2244dd;
+      transition:background-color 0.2s, color 0.2s, border 0.2s;
+    }
     .ctn-btn:hover{
-      background-color: #32569d;
+      border:2px solid white;
+      background-color: #2244dd;
+      color:white;
     }
     #header-button{
       z-index:99;
@@ -303,7 +316,7 @@
     <header>
     <div class="header-content">
       <h1>Where Creativity <em>ECHO</em>es.</h1>
-      <p  id="header-name" href="#about-us" class="cta-btn">Echo LitMag</p>
+      <p id="header-name" class="cta-btn">Echo LitMag</p>
     </div>
     <div class="right-image large-only"></div>
 </header>
@@ -318,15 +331,16 @@
     <img class="float-left" src="pic2.png">
     <h2>ABOUT US</h2>
     <p><em>Echo</em> emerged in 2019 from SSBS students passionate about providing a platform where ideas may collide. Now, it has evolved beyond a collection of articles and artwork—it's a reflection of the passion, talent, and spirit that make our school so special. With each piece submitted, we receive not just words or images, but a glimpse into the heart and soul of our community. The hard work of every contributor, from writers and artists to photographers and editors, is what gives life to these pages. We take <em>Echo</em> as an opportunity to celebrate the diversity and creativity that surround us every day.</p>
+    <a href="past-editors.html" class="ctn-btn">Our Past Editors</a>
   </section>
   <!-- Blocks Section -->
   <section id="past-issues">
     <h2>PAST ISSUES</h2>
   <div class="blocks-container">
-    <div class="block block-number"><p>I</p></div>
+    <a href="issue1.html"><div class="block block-number block-number-active"><p>I</p></div></a>
     <div class="block" id="issue1"><p></p></div>
     <div class="block" id="issue2"><p></p></div>
-    <div class="block block-number"><p>II</p></div>
+    <a href="issue2.html"><div class="block block-number block-number-active"><p>II</p></div></a>
     <a href="issue3.html"><div class="block block-number block-number-active"><p>III</p></div></a>
     <div class="block" id="issue3"><p></p></div>
     <div class="block" id="issue4"><p></p></div>
@@ -334,7 +348,6 @@
     <a href="issue5.html"><div class="block block-number block-number-active"><p>V</p></div></a>
     <div class="block" id="issue5"><p></p></div>
   </div>
-  <p><em>*Issue I & II are unavailable.</em></p>
 </section>
 <section id="issue6" class="clear-fix">
   <img class="float-right" src="collage.png">
