@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="logo.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Include PDF.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+  <!-- Include Turn.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4/turn.min.js"></script>
+  <title>Testimonial | Echo LitMag</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .vertically-center{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+    .horizontally-center{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .float-left,.float-right{
+        width:80vw;
+    }
+    .large-only{
+        display:none;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    a{
+      text-decoration:none;
+      color:#2244dd;
+      transition:color 0.2s;
+    }
+    a:hover{
+      color:#32569d;
+    }
+    body, html {
+      
+      font-family:'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    nav{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        position:fixed;
+        top:0;
+        z-index:99;
+        width:100vw;
+        background-color:white;
+        padding:10px 30px;
+        box-shadow:0 3px 10px black;
+        text-align:center;
+    }
+    nav a{
+      font-size:1.2em;
+    }
+    
+    nav div{
+      display:flex;
+      align-items:end;
+    }
+    nav div p{
+        color:#2244dd;
+        font-size:24px;
+        font-family: Georgia, serif;
+        text-transform: uppercase;
+        letter-spacing:0.1em;
+        line-height:1.2em;
+        margin-bottom:10px;
+
+    }
+    nav a:hover div p{
+      color:#32569d;
+    }
+    nav img{
+        width:50px;
+        height:50px;
+        margin-right:10px;
+    }
+
+    .end{
+      margin-top:1px;
+          width:100%;
+          padding:5px 0;
+          background-color:#2244dd;
+          color:white;
+          text-align:center;
+      }
+
+    
+     h1{
+      margin-top:100px;
+      font-weight:normal;
+      font-family:Georgia, serif;
+      font-size:36px;
+      text-align:center;
+      letter-spacing: 0.05em;;
+      text-transform:uppercase;
+    }
+    h2{
+      font-weight:normal;
+      font-family:Georgia, serif;
+      font-size:32px;
+      margin-bottom:10px;
+    }
+    h3{
+        font-weight:normal;
+        font-family:"Times New Roman", serif;
+        font-style:italic;
+        color:#666;
+        margin-top:10px;
+        text-align:right;
+    }
+    p{
+        line-height:1.25em;
+        margin-block-start:0.5em;
+        margin-block-end:0.5em;
+    }
+    .editor{
+        width:90vw;
+        margin: 20px 5vw;
+    }
+    .editor img{
+        margin:30px 5vw;
+        width:80vw;
+        height:80vw;
+    }
+    
+    @media (min-width: 768px){
+        h1{
+            margin:150px 0 10px;
+            font-size:48px;
+        }
+        .editor{
+            margin:50px 10vw;
+            width:75vw;
+            display:flex;
+        }
+        .editor img{
+            margin:0 50px 0 0;
+            width:300px;
+            height:300px;
+        }
+        
+
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="placeholder"></div>
+    <a href="index.html">
+      <div>
+          <img src="logo.jpg" alt="Logo" width="50">
+          <p>Echo LitMag</p>
+      </div>
+    </a>
+    <p><a href="index.html">Home</a></p>
+</nav>
+<main>
+    <h1>Testimonial</h1>
+    <div class="editor">
+        <img src="Editors/Rosalie_Liu.jpg">
+        <div>
+            <p>"Perhaps every artwork echoes not its authors' humble past but a little bit about its own processes of creation. The scenes of the creation of Echo take place in many corners of SSBS: Mr. Seyoum's office, the lounge on the 5th floor where I procrastinated my personal statement, and the library that comforted us with a room of swelling, damp warm air. Right now I am parked outside the San Francisco International Airport to pick up my significant other when I was thrown back by the times when I thought there was no way out in this suffocating world. What a naive soul. Though I avoided being didactic with all my willpower, I could not help but write: how I wished to go back to relive all those trivial moments, the scenes of struggles to write, bursts of inspiration, and the debates with teachers on whether the emotion of logic shall triumph...I wish Echo the best, and I wish all those nourished by its power, art & literature's power, the best."</p>
+            <h3>- Rosalie Liu, Editor of Issue 1</h3>
+        </div>
+    </div>
+    <div class="editor">
+      <img src="Editors/Nicole_Tan.jpg">
+      <div>
+          <p>"'The Story of a Street' eloquently captures those elusive, fleeting moments that usually slip by unnoticed in urban life. The way it follows the narrator’s quiet observations of the city feels hauntingly intimate, especially the way it gradually transitions from detachment to emotional resonance. This story, simple yet profound, doesn’t just talk about the relationship between loneliness and connection in our everyday lives; it lives in those spaces, making us feel the weight of them too. This resonates so well with what Echo LitMag stands for: a platform that celebrates writing as a powerful bridge that invites the readers into the subtle, shared experiences that might otherwise go neglected. The images, like the old woman’s gardenias or the rain-drenched street, leap off the page, underscoring Echo’s dedication to meaningful storytelling that captures life’s richness in both its beauty and its heartbreaks."</p>
+          <h3>- Anonymous beta reader</h3>
+      </div>
+  </div>
+  <div class="editor">
+    <img src="header-image.jpg">
+    <div>
+        <p>"Raw and bittersweet, 'Joey, Joey' depicts a moving story about love, grief, and memory. As the narration unravels and introduces a plot twist, we feel Kate’s pain not only in Joey’s death but in the slow, inevitable aging process she witnesses day by day, which is somehow more heartbreaking than a sudden loss. The piece pulls us into Kate’s memories with such vivid detail—the smell of her dog’s fur, the feel of running through a dry riverbed together—that Joey becomes almost a part of our growth, too. Echo LitMag values storytelling that doesn’t just express, but preserves; here, the portrayal of memory and loss feels haunting and real, as any reader could easily tap into their own experiences with such grievances as Kate narrates her past with Joey. It’s a story that reminds us of both the strength and fragility of love and how, sometimes, loss can shape our lives as deeply as presence.."</p>
+        <h3>- Anonymous beta reader</h3>
+    </div>
+</div>
+       
+</main>
+
+<div class="end">Copyright 2024 SSBS Echo LitMag.</div>
+</body>
+</html>
